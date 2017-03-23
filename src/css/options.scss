@@ -1,0 +1,128 @@
+$primary-blue: #0275d8;
+$primary-blue-hover: #025aa5;
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292b2c;
+  min-width: 700px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: .4rem;
+}
+
+.reset-defaults {
+  text-align: right;
+}
+
+a {
+  color: $primary-blue;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-blue-hover;
+    text-decoration: underline;
+  }
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 100%;
+}
+
+.option-group {
+  margin-bottom: 1.25rem;
+
+  p {
+    color: #444;
+  }
+}
+
+label {
+  color: #2d6098;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.option-input {
+  display: block;
+  width: 100%;
+  padding: .5rem .75rem;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+select {
+  touch-action: manipulation;
+  height: calc(2.25rem + 2px);
+  -webkit-appearance: menulist;
+
+  &:hover {
+    background-color: #fff;
+    box-shadow: none;
+    background-image: none !important;
+  }
+}
+
+ul {
+  margin: 0;
+  margin-bottom: 0.6rem;
+}
+
+.btn {
+  background-image: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  border: 1px solid transparent !important;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: all .2s ease-in-out;
+}
+
+.primary-btn {
+  color: #fff;
+  background-color: $primary-blue;
+  border-color: #0275d8;
+  width: 200px;
+
+  &:hover {
+    background-image: none;
+    color: #fff !important;
+    background-color: $primary-blue-hover;
+    border-color: #01549b;
+  }
+}
+
+.button-wrapper {
+  text-align: right;
+}

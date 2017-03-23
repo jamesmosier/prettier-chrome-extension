@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <div class="container">
+    <div class="reset-defaults">
+      <a href="#" id="reset-defaults">Reset Defaults</a>
+    </div>
+
+    <div class="options-wrapper" id="options-form">
+      <div class="option-group">
+        <label for="printWidth">Print Width:</label>
+        <p>Fit code within this line limit</p>
+        <input type="text" id="printWidth" class="option-input">
+      </div>
+
+      <div class="option-group">
+        <label for="tabWidth">Tab Width:</label>
+        <p>Number of spaces it should use per tab</p>
+        <input type="text" id="tabWidth" class="option-input">
+      </div>
+
+      <div class="option-group">
+        <label for="singleQuote">Single Quote:</label>
+        <p>If true, will use single instead of double quotes</p>
+        <select id="singleQuote" class="option-input">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+
+      <div class="option-group">
+        <label for="trailingComma">Trailing Comma:</label>
+        <p>
+          Controls the printing of trailing commas wherever possible. Valid options:
+          <ul>
+            <li>"none" &mdash; No trailing commas</li>
+            <li>"es5" &mdash; Trailing commas where valid in ES5 (objects, arrays, etc)</li>
+            <li>"all" &mdash; Trailing commas wherever possible (function arguments)</li>
+          </ul>
+        </p>
+        <select id="trailingComma" class="option-input">
+          <option value="none">none</option>
+          <option value="es5">es5</option>
+          <option value="all">all</option>
+        </select>
+      </div>
+
+      <div class="option-group">
+        <label for="bracketSpacing">Bracket Spacing:</label>
+        <p>Controls the printing of spaces inside object literals</p>
+        <select id="bracketSpacing" class="option-input">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+
+      <div class="option-group">
+        <label for="jsxBracketSameLine">JSX Bracket Same Line:</label>
+        <p>If true, puts the `>` of a multi-line jsx element at the end of the last line instead of being alone on the next line</p>
+        <select id="jsxBracketSameLine" class="option-input">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+
+      <div class="option-group">
+        <label for="parser">Parser:</label>
+        <p>Which parser to use. Valid options are 'flow' and 'babylon'</p>
+        <select id="parser" class="option-input">
+          <option value="babylon">babylon</option>
+          <option value="flow">flow</option>
+        </select>
+      </div>
+
+      <div class="button-wrapper">
+        <button type="button" id="save" class="btn primary-btn">Save</button>
+      </div>
+    </div>
+
+    <!--
+      Used for development only
+      <button style="margin-top: 30px;" type="button" id="clear">clear</button>
+    -->
+  </div>
+</body>
+</html>
