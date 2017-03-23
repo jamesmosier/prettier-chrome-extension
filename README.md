@@ -7,8 +7,15 @@ Format your JavaScript code using the [Prettier](https://github.com/prettier/pre
 
 ## Usage
 
-1. Install from the [Chrome Web Store](https://google.com) to get started.
-2. Ensure your code fences are defined as JS blocks (```js var abc = 123; ```)
+1. Install from the [Chrome Web Store](https://chrome.google.com/webstore/detail/prettier-chrome-extension/khnhpkjhoogpgnbhagabcnamppfohhjd) to get started.
+2. Ensure your code fences are defined as JS blocks: 
+
+\```js 
+
+var abc = 123; 
+
+\```
+
 3. Format your code via a handy context menu.
 
 ## Options
